@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  background-color: #DFCDC3;
 }
 
 .App-header {
-  background-color: #DFCDC3;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,4 +12,5 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #3C4245;
+ font-family: 'Fugaz One', cursive;
 }
