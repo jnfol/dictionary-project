@@ -1,0 +1,5 @@
+.searchedWord {
+  text-transform: capitalize;
+  font-family: "Fugaz One", cursive;
+  font-size: 50px;
+}
