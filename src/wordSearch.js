@@ -1,28 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./wordSearch.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function WordSearch() {
-    let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
-function handleResponse(response){
+  function handleResponse(response) {
     console.log(response.data[0]);
-}
-    
-    function search(event) {
-        event.preventDefault();
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiUrl).then(handleResponse);
-}
+    setResults(response.data[0]);
+  }
 
-function handleKeywordChange(event) {
+  function search(event) {
+    event.preventDefault();
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleKeywordChange(event) {
     setKeyword(event.target.value);
-}
-    return (
+  }
+  return (
     <div className="WordSearch">
-    <form onSubmit={search}>
-        <input type="search" autoFocus={true} onChange={handleKeywordChange}/>
-    </form>
+      <form onSubmit={search}>
+        <div className="search-form">
+          <input
+            type="search"
+            autoFocus={true}
+            className="form-contrl"
+            onChange={handleKeywordChange}
+          />
+        </div>
+      </form>
+      <Results results={results} />
     </div>
-    )
+  );
 }
