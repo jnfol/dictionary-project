@@ -1,0 +1,23 @@
+.Form {
+  background: #994f2c;
+  padding: 30ox;
+  border-radius: 50% 65% 50% 70%;
+  box-shadow: 60px -19px rgb(100, 160, 158, 0.4);
+  margin: 20px;
+}
+#Search {
+  border-radius: 10px;
+  border: black;
+  padding: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+.Results {
+  background: #507765;
+  padding: 30ox;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: -60px 16px rgb(153, 79, 44, 0.4);
+  margin: 40px;
+  color: #3e2308;
+}

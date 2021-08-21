@@ -7,7 +7,6 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>Dictionary</h1>
-          <p className="Instructions">Search for a word</p>
           <WordSearch />
         </header>
         <main></main>

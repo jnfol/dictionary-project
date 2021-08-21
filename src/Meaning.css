@@ -1,4 +1,10 @@
 .partOfSpeech {
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
+  color: #5a3d2b;
+}
+
+.example {
+  opacity: 0.7;
+  font-size: 14px;
 }

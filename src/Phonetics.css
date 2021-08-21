@@ -1,0 +1,13 @@
+a {
+  color: #1a3456;
+  transition: all 150ms ease-in-out;
+  margin-right: 10px;
+}
+
+.Phonetics a:hover {
+  color: #87a79d;
+}
+
+.PhoneticsText {
+  opacity: 0.7;
+}

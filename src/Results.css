@@ -1,5 +1,10 @@
 .searchedWord {
   text-transform: capitalize;
   font-family: "Fugaz One", cursive;
-  font-size: 50px;
+  font-size: 40px;
+  margin: 10px 0 0;
+}
+
+.WordResults {
+  display: inline;
 }
