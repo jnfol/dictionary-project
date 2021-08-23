@@ -1,10 +1,17 @@
 .searchedWord {
   text-transform: capitalize;
   font-family: "Fugaz One", cursive;
-  font-size: 40px;
+  font-size: 55px;
   margin: 10px 0 0;
+  color: #a18024;
+  text-align: left;
 }
 
-.WordResults {
-  display: inline;
+.Phonetics {
+  margin: 0 0 0;
+  text-align: left;
+}
+
+hr {
+  color: #5a3d2b;
 }
